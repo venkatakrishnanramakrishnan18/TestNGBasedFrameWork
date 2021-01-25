@@ -24,6 +24,8 @@ public class ElementFetch {
                 return BaseTest.driver.findElements(By.id(indentifierValue));
             case"CSS":
                 return BaseTest.driver.findElements(By.cssSelector(indentifierValue));
+            case"XPATH":
+                return BaseTest.driver.findElements(By.xpath(indentifierValue));
             default:
                 return null;
         }
